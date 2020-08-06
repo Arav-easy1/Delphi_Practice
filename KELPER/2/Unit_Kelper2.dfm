@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 300
-  Top = 150
+  Left = 494
+  Top = 267
   Width = 1280
   Height = 720
   Caption = 'K:LPER_ver2'
@@ -42,6 +42,7 @@ object Form2: TForm2
       Caption = 'HELP'
       object Helper1: TMenuItem
         Caption = 'HELPER'
+        OnClick = Helper1Click
       end
       object Herpee1: TMenuItem
         Caption = 'HELPEE'
@@ -49,7 +50,6 @@ object Form2: TForm2
     end
     object Mypage1: TMenuItem
       Caption = 'MYPAGE'
-      OnClick = Mypage1Click
       object MyPage2: TMenuItem
         Caption = 'MyPage'
       end

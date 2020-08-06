@@ -1,0 +1,17 @@
+program Project_Kelper3;
+
+uses
+  Forms,
+  main in 'main.pas' {Form1},
+  HelperList in 'HelperList.pas' {frmHelper},
+  HelpeeList in 'HelpeeList.pas' {Form3};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmHelper, frmHelper);
+  Application.CreateForm(TForm3, Form3);
+  Application.Run;
+end.

@@ -29,6 +29,7 @@ type
     Logout1: TMenuItem;
     Alert1: TMenuItem;
     MadebyARAV1: TMenuItem;
+    procedure Helper1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -41,5 +42,16 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm2.Helper1Click(Sender: TObject);
+begin
+  if ActiveMDIChild <> nil then
+  begin
+    if ActiveMDIChild.Name = 'HerperList' then
+      Exit
+    else
+      ActiveMDIChild.Close;
+  end
+  end;
 
 end.
