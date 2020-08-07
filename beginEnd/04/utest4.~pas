@@ -1,0 +1,58 @@
+unit utest4;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  TForm1 = class(TForm);
+  Country = array[0..2] of string;
+
+  {레코드형 자료관리}
+  Person = record
+    Name : String;
+    Age : Integer;
+    Address : String;
+
+  , TMyRecord = record
+    type
+    TInnerColorType = Integer;
+
+  var
+  Red: Integer;
+    class var
+    Blue: Integer;
+
+  procedure printRed();
+  constructor Create(val:Integer);
+  property RedProperty: TInnerColorType read Red Write Red;
+  class property BlueProperty:TInnerColorType read Blue write Blue;
+
+  end;
+
+
+var
+  Form1: TForm1;
+  i: integer;
+  s: string;
+  Countries: Country;
+  procedure test;
+
+
+implementation
+
+{$R *.dfm}
+
+constructor TMyRecord.Create(val: Integer);
+begin
+  Red := val;
+end;
+
+procedure TMyRecord.printRed;
+begin
+  writeln('Red: ', Red);
+end;
+
+end.

@@ -1,0 +1,63 @@
+object Form1: TForm1
+  Left = 482
+  Top = 345
+  Width = 1305
+  Height = 675
+  Caption = 'Form1'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object MyButton: TButton
+    Left = 115
+    Top = 65
+    Width = 75
+    Height = 25
+    Caption = 'close'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    OnClick = MyButtonClick
+  end
+  object Button1: TButton
+    Left = 250
+    Top = 65
+    Width = 75
+    Height = 25
+    Caption = #49892#49884#44036#50640' '#48320#44221
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 385
+    Top = 65
+    Width = 75
+    Height = 25
+    Caption = #54648#46308#47084#44277#50976
+    TabOrder = 2
+    OnClick = MyButtonClick
+  end
+  object Button3: TButton
+    Left = 110
+    Top = 135
+    Width = 75
+    Height = 25
+    Caption = #48320#49688#51217#44540
+    TabOrder = 3
+  end
+end
