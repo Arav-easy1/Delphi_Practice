@@ -95,7 +95,6 @@ begin
   Edit3.Text := H.Address;
   Edit4.Text := H.Office;
   Edit5.Text := IntToStr(H.Hrs);
-  Edit6.Text := IntToStr(H.Rate);
 end;
 
 procedure TForm1.Button8Click(Sender: TObject);
